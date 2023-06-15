@@ -1,8 +1,8 @@
-#include <stdio.h>
+#include<stdio.h>
 /**
- *main - void
- *Description : first script with C
- *Return : the value (0)
+ * main - puts "Programming is like building a multilingual
+ *
+ * Return: return always 0 value.
  */
 int main(void)
 {
