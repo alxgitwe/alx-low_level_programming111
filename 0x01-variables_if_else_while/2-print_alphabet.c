@@ -6,7 +6,7 @@
 int main(void)
 {
 	char alphabet;
-	for (alphabet = 'a'; c <= 'z'; ++alphabet)
+	for (alphabet = 'a'; alphabet <= 'z'; ++alphabet)
 		putchar("%c \n", c);
 	return (0);
 }
