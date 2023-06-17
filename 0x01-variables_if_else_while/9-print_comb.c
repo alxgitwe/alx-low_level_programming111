@@ -9,9 +9,11 @@ int main(void)
 	int digit;
 
 	for (digit = 48; digit < 57; ++digit)
+	{
 		putchar(digit);
 		putchar(44);
 		putchar(39);
+	}
 	putchar(57);
 	return (0);
 }
