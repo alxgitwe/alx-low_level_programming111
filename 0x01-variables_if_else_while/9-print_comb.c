@@ -10,10 +10,10 @@ int main(void)
 
 	for (digit = 48; digit < 57; ++digit)
 	{
-		putchar(digit);
-		putchar(',');
+		putchar(digit + ',');
 		putchar(' ');
 	}
-	putchar(57, '\n');
+	putchar(57);
+	putchar('\n');
 	return (0);
 }
