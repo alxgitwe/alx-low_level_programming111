@@ -8,7 +8,7 @@
  * Return: return the value 0 or 1
  */
 
-int __isalpha(int c)
+int _isalpha(int c)
 {
 	if ((c >= 97 && c <= 122) || (cc >= 65 && c <= 90))
 	{
