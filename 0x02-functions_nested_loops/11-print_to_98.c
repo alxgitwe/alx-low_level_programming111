@@ -6,7 +6,7 @@
  *
  * Return: return the value 0 or 1
  */
-void print_to_98(int n);
+void print_to_98(int n)
 {
 	int i;
 
