@@ -4,7 +4,7 @@
  * prints the alphabet, in lowercase, followed by a new line
  * Return: return the value 0
  */
-void print_alphabet(void);
+void print_alphabet(void)
 {
 	int a;
 	for (a = 97; a <= 122; a++)
