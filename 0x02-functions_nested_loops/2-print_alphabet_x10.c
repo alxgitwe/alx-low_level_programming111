@@ -1,15 +1,13 @@
 #include "main.h"
 /**
- * print_alphabet - start of the program it prints the alphabet, in lowercase
+ * print_alphabet_x10 - start of the program it prints the alphabet, in lowercase
  *
  * 1-alphabet.c :prints the alphabet, in lowercase, followed by a new line
  *
  * Return: return the value 0
  */
 
-
-
-void print_alphabet(void)
+void print_alphabet_x10(void)
 {
 	int a;
 	int b;
