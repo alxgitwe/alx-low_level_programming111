@@ -7,20 +7,19 @@
  * Return: return the value 0
  */
 
-int i;
-for (i = 0; i < 10; i++)
-{
-	void print_alphabet(void)
-	{
-		int a;
 
+
+void print_alphabet(void)
+{
+	int a;
+	int b;
+
+	for (b = 0; b < 10; b++)
+	{
 		for (a = 97; a <= 122; a++)
 		{
 			_putchar(a);
 		}
 		_putchar('\n');
-
-
 	}
-
 }
