@@ -19,7 +19,7 @@ void print_to_98(int n)
 				_putchar((i % 10) + '0');
 			}
 			else
-				_putchar(('i' + '0'));
+				_putchar((i + '0'));
 		_putchar(56);
 		_putchar(57);
 		_putchar('\n');
