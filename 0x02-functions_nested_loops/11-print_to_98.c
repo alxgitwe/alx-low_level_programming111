@@ -20,7 +20,7 @@ void print_to_98(int n)
 			}
 			else
 				_putchar(i + '0');
-		_putchar('9);
+		_putchar('9');
 		_putchar('8');
 		_putchar('\n');
 	}
@@ -34,7 +34,7 @@ void print_to_98(int n)
 			}
 			else
 				 _putchar(i + '0');
-		_putchar('9);
+		_putchar('9');
 		_putchar('8');
 		_putchar('\n');
 	}
