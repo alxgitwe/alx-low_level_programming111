@@ -2,7 +2,7 @@
 /**
  * print_to_98 - function that prints all natural numbers
  *
- * @n : int
+ * @i : int
  *
  * Return: return the value 0 or 1
  */
@@ -19,9 +19,9 @@ void print_to_98(int n)
 				_putchar((i % 10) + '0');
 			}
 			else
-				_putchar(i + '0');
-		_putchar('9');
-		_putchar('8');
+				_putchar(('i' + '0'));
+		_putchar(56);
+		_putchar(57);
 		_putchar('\n');
 	}
 	else
@@ -34,8 +34,8 @@ void print_to_98(int n)
 			}
 			else
 				 _putchar(i + '0');
-		_putchar('9');
-		_putchar('8');
+		_putchar(56);
+		_putchar(57);
 		_putchar('\n');
 	}
 }
