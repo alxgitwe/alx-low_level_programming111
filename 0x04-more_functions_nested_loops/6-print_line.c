@@ -1,10 +1,10 @@
 #include "main.h"
+
 /**
- * print_line - function that draws a straight line in the terminal
+ * print_line - function that draws a straight line
  *
- * @n: int
+ * @n: int number of _ character
  *
- * Return: return
  */
 
 void print_line(int n)
@@ -19,3 +19,4 @@ void print_line(int n)
 			_putchar('_');
 		_putchar('\n');
 	}
+}
