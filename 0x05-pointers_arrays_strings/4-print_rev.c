@@ -18,7 +18,7 @@ void print_rev(char *s)
 	{
 		char c;
 
-		c = s[i];
+		c = &s[i];
 		_putchar(c);
 		i--;
 	}
