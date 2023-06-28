@@ -20,7 +20,7 @@ int _atoi(char *s)
 		if (*s == '-' || *s == '+')
 			continue;
 		else
-			n = n * 10 + (*s - 48);
+			n = (n * 10) + (*s - 48);
 		i++;
 	}
 	return (n);
