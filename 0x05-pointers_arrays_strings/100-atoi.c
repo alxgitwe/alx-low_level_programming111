@@ -17,13 +17,17 @@ int _atoi(char *s)
 
 	int si = 1;
 
-	while (*s++)
+	int l;
+
+	l = _strlen(char *s);
+
+	for (i < l, i++)
 	{
 		if (*s == '-')
 			si = si * -1;
 		else
 			n = (n * 10) + (*s - 48);
-		i++;
+		*S++;
 	}
 	return (n * si);
 }
