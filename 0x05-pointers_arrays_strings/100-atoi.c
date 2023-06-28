@@ -13,7 +13,9 @@ int _atoi(char *s)
 {
 	int n = 0;
 
-	for (int i = 0; *s != '\0'; i++)
+	int i = 0;
+
+	for (*s != '\0'; i++)
 	{
 		if (*s == '-' || *s == '+')
 			continue;
