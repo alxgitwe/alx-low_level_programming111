@@ -22,7 +22,7 @@ int _atoi(char *s)
 		else
 			n = n * 10 + (*s - 48);
 		i++;
-		s++;
+		*(s++);
 	}
 	return (n);
 }
