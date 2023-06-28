@@ -15,7 +15,7 @@ int _atoi(char *s)
 
 	int i = 0;
 
-	int si;
+	int si = 1;
 
 	while (*s++)
 	{
