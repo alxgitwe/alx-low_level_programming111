@@ -15,14 +15,13 @@ int _atoi(char *s)
 
 	int i = 0;
 
-	while (*s != '\0')
+	while (*s != '\0'; *s++)
 	{
 		if (*s == '-' || *s == '+')
 			continue;
 		else
 			n = n * 10 + (*s - 48);
 		i++;
-		*(s++);
 	}
 	return (n);
 }
