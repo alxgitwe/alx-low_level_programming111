@@ -13,21 +13,17 @@ int _atoi(char *s)
 {
 	int n = 0;
 
-	int i = 0;
-
 	int si = 1;
 
-	int l;
-
-	l = _strlen(char *s);
-
-	for (i < l, i++)
+	while (*s++)
 	{
 		if (*s == '-')
 			si = si * -1;
-		else
+		else if (*s >= '0' && *s <= '9')
+
 			n = (n * 10) + (*s - 48);
-		*S++;
+		else if (num > 0)
+			break;
 	}
 	return (n * si);
 }
