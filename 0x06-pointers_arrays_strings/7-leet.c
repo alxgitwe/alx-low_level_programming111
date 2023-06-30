@@ -18,15 +18,14 @@ char *leet(char *s)
 
 	char L[] = {'A', 'E', 'O', 'T', 'L'};
 
+	unsigned int i;
 
 	while (*s)
 	{
-		unsigned int i;
-
-		for (i = 0; i < sizeof(d) / sizeof (char); i++)
+		for (i = 0; i < 5; i++)
 		{
-			if (*t == l[i] || *t == L[i])
-				*s = d[i] + 48;
+			if (*s == l[i] || *s == L[i])
+				*s = d[i];
 		}
 		s++;
 	}
