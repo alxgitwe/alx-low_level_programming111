@@ -8,14 +8,13 @@
  * Return: return (t)
  *
  */
-
-int *leet(char *s)
+char *leet(char *s)
 {
 	char *t = s;
 
 	char d[] = {'4', '3', '0', '7', '1'};
 
-	char l[] = {'a', 'e', ''o', 't', 'l'};
+	char l[] = {'a', 'e', 'o', 't', 'l'};
 
 	char L[] = {'A', 'E', 'O', 'T', 'L'};
 
@@ -26,10 +25,11 @@ int *leet(char *s)
 
 		for (i = 0; i < sizeof(d) / sizeof (char); i++)
 		{
-			if (*t == l[i] || * == L[i])
+			if (*t == l[i] || *t == L[i])
 				*s = d[i] + 48;
 		}
 		s++;
 	}
+
 	return (t);
 }
