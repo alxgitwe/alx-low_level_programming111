@@ -15,14 +15,14 @@ char *_strchr(char *s, char c)
 {
 	unsigned int d;
 
-	int k = sizeof(s);
+	unsigned int k = sizeof(s);
 
 	for (d = 0; d < k; d++)
 		if (s[d] == c)
 			break;
 
 	if (s[d] == c)
-		return (s[d : k]);
+		return (s + d);
 	else
 		return (NULL);
 }
