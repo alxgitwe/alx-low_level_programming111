@@ -19,10 +19,12 @@ unsigned int _strspn(char *s, char *accept)
 
 	int i = 0;
 
-	for (c = 0; accept[c] >= '\0'; c++)
-		for (d = 0; s[d] >= '\0'; d++)
+	for (c = 0; s[c] > '\0'; c++)
+		for (d = 0; accept[d] > '\0'; d++)
 			if (s[d] == accept[c])
+			{
 				i++;
-	return (i);
+			}
+	return (i + 1);
 
 }
