@@ -13,16 +13,13 @@
 
 char *_strchr(char *s, char c)
 {
-	unsigned int d;
+	int d;
 
-	unsigned int k = sizeof(s);
-
-	for (d = 0; d < k; d++)
+	for (d = 0; s[d] > '\0'; d++)
+	{
 		if (s[d] == c)
-			break;
+			return (s + d);
+	}
 
-	if (s[d] == c)
-		return (s + d);
-	else
-		return (NULL);
+	return ('\0');
 }
