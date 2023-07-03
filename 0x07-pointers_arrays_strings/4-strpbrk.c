@@ -30,9 +30,9 @@ char *_strpbrk(char *s, char *accept)
 				t = &s[c];
 				return (t);
 			}
-			d++
+			d++;
 		}
-		c++
+		c++;
 	}
 	return (0);
 }
