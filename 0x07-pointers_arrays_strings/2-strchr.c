@@ -7,7 +7,7 @@
  *
  * @c: char
  *
- * Return: return NULL or pointer
+ * Return: return pointer (s)
  *
  */
 
