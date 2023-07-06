@@ -1,13 +1,11 @@
 #include "main.h"
 
 /**
- * is_prime_number - function that returns 1 if the input integer
- * is a prime number
- *
  * modulo - function modulo
  *
- * @n : int
+ * @k : unsigned int
  *
+ * @n: int
  * Return: return (1)
  *
  */
@@ -19,6 +17,16 @@ int modulo(int n, unsigned int k)
 	else
 		return (1);
 }
+
+/**
+ * is_prime_number - function that returns 1 if the input integer
+ * is a prime number
+ *
+ * @n : int
+ *
+ * Return: return (1)
+ *
+ */
 
 int is_prime_number(int n)
 {
