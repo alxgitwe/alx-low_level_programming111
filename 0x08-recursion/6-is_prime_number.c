@@ -12,7 +12,7 @@
  *
  */
 
-int modulo(n, k)
+int modulo(int n, unsigned int k)
 {
 	if ((n % k) == 0)
 		return (0);
