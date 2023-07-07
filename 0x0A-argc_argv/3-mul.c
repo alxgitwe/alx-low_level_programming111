@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 	}
 	else if (argc == 3)
 	{
-		i = atoi(argv[2]) * atoi(argv[3]);
+		i = atoi(argv[2]) * atoi(argv[1]);
 		printf("%d\n", i);
 	}
 	return (0);
