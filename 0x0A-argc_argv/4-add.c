@@ -17,11 +17,7 @@ int main(int argc, char *argv[])
 
 	int j;
 
-	if (argc == 1)
-	{
-		printf("0\n");
-	}
-	else if (argc > 1)
+	if (argc > 1)
 	{
 		for (j = 1; j < argc; j++)
 		{
