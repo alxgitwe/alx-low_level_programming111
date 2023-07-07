@@ -15,15 +15,15 @@ int main(int argc, char *argv[])
 {
 	int i;
 
-	if (argc == 1)
-	{
-		printf("Error\n");
-		return (1);
-	}
-	else if (argc == 3)
+	if (argc == 3)
 	{
 		i = atoi(argv[2]) * atoi(argv[1]);
 		printf("%d\n", i);
+	}
+	else
+	{
+		printf("Error\n");
+		return (1);
 	}
 	return (0);
 }
