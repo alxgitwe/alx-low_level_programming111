@@ -33,6 +33,7 @@ char *_strdup(char *str)
 		for (j = 0; j < s; j++)
 			p[j] = str[j];
 	}
+	return (p);
 
 
 
