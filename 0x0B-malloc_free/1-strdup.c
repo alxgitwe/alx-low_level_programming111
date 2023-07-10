@@ -19,7 +19,7 @@ char *_strdup(char *str)
 
 	s = 0;
 
-	int j = 0;
+	int j;
 
 	p = malloc(s * (sizeof(*str)) + 1);
 	if (str == NULL)
@@ -32,7 +32,7 @@ char *_strdup(char *str)
 	}
 	else
 	{
-		for (; j < s; j++)
+		for (j = 0; j < s; j++)
 			p[j] = str[j];
 	}
 
