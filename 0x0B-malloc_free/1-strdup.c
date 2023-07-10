@@ -26,7 +26,7 @@ char *_strdup(char *str)
 		return (NULL);
 	for (; str[s] != '\0'; s++)
 		;
-	if (p == 0)
+	else if (p == 0)
 	{
 		return (NULL);
 	}
