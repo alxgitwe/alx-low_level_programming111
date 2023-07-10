@@ -6,7 +6,7 @@
  *
  * @k : string
  *
- * Return: int
+ * Return: return
  *
  */
 
@@ -16,7 +16,7 @@ int _len(char *k)
 
 	for (; k[s] != '\0'; s++)
 		;
-	return (k);
+	return (s);
 
 }
 
