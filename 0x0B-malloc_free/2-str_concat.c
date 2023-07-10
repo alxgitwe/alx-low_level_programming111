@@ -49,14 +49,14 @@ char *str_concat(char *s1, char *s2)
 	j = malloc((a + b) * sizeof(char) + 1);
 	if (j == 0)
 		return (0);
-	for (c = 0; c < a + b; c++)
+	for (c = 0; c <= a + b; c++)
 	{
 		if (c < a)
 			j[c] = s1[c];
 		else
 			j[c] = s2[c - a];
 	}
-	j[c] = "\0";
+	j[c] = '\0';
 	return (j);
 
 }
