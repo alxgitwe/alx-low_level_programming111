@@ -48,7 +48,7 @@ char *str_concat(char *s1, char *s2)
 	b = _len(s2);
 	j = malloc((a + b) * sizeof(char) + 1);
 	if (j == 0)
-		return (NULL);
+		return (0);
 	for (c = 0; c < a + b; c++)
 	{
 		if (c < a)
@@ -56,7 +56,7 @@ char *str_concat(char *s1, char *s2)
 		else
 			j[c] = s2[c - a];
 	}
-	j[c] = '\0';
+	j[c] = "\0";
 	return (j);
 
 }
