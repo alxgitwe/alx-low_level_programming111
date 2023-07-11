@@ -19,7 +19,7 @@ int **alloc_grid(int width, int height)
 	int b;
 	int c;
 
-	a = (height * sizeof(*a));
+	a = (sizeof(*a) * height);
 
 	if (width == 0 || height == 0)
 	{
