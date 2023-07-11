@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 #include <stdlib.h>
 
 /**
@@ -6,23 +6,23 @@
  *
  * @argc : int
  *
- * @argv : pointer int
+ * @argv : pointer
  *
  * Return: return
  *
  */
 
-int main(int argc, int *argv[])
+int main(int argc, char *argv[])
 {
 	if (argc > 1)
 	{
-		int a, b, c, d;
+		int a, b, c;
+
+		int d[] = {25, 10, 5, 2, 1};
 
 		b = 0;
 
 		c = atoi(argv[1]);
-
-		d[] = {25, 10, 5, 2 1};
 
 		for (a = 0; a < 5; a++)
 		{
@@ -36,7 +36,7 @@ int main(int argc, int *argv[])
 				}
 			}
 		}
-		printf("%d\n");
+		printf("%d\n", b);
 	}
 	else
 	{
