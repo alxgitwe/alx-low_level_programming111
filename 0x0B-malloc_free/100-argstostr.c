@@ -58,10 +58,10 @@ char *argstostr(int ac, char **av)
 	for (a = 0; a < ac; a++)
 	{
 		for (c = 0; av[a][c] != '\0'; c++, d++)
-			ab[c] = av[a][c];
-		ab[c] = '\n';
-		c++;
+			ab[d] = av[a][c];
+		ab[d] = '\n';
+		d++;
 	}
-	ab[c] = '\0';
+	ab[d] = '\0';
 	return (ab);
 }
