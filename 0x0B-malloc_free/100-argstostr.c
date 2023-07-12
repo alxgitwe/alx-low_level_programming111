@@ -48,7 +48,7 @@ char *argstostr(int ac, char **av)
 
 	if (av == NULL || ac == 0)
 		return (NULL);
-	for (a = 0; a < ac; a++, b++)
+	for (; a < ac; a++, b++)
 		b = b + _lenght(av[a]);
 
 	ab = malloc((b + 1) * sizeof(char));
