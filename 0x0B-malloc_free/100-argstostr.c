@@ -41,10 +41,15 @@ char *argstostr(int ac, char **av)
 	int a, b, c, d;
 	char *ab;
 
+	a = 0;
+	b = 0;
+	c = 0;
+	d = 0;
+
 	if (av == NULL || ac == 0)
 		return (NULL);
-	for (a = 0; a < ac; a++; b++)
-		b = b + _len(av[a]);
+	for (; a < ac; a++; b++)
+		b = b + _lenght(av[a]);
 
 	ab = malloc((b + 1) * sizeof(char));
 	if (ab == 0)
