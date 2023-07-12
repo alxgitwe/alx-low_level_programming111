@@ -53,7 +53,7 @@ char *argstostr(int ac, char **av)
 	for (a = 0; a < ac; a++)
 	{
 		for (c = 0; av[a][c] != '\0'; c++; c++)
-			ab[c] = av[[a][c];
+			ab[c] = av[a][c];
 		ab[c] = '\n';
 		c++;
 	}
