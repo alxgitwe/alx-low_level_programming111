@@ -10,13 +10,13 @@
  *
  */
 
-int _lt(char *a)
+int _lt(char *c)
 {
-	int a;
+	int d;
 
-	for (a = 0; l[a] != '\0'; a++)
+	for (d = 0; c[d] != '\0'; d++)
 		;
-	return (a);
+	return (d);
 
 }
 
@@ -38,8 +38,8 @@ int _lt(char *a)
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *s1s2;
-	int lts1 = _lt(*s1);
-	int lts2 = _lt(*s2);
+	int lts1 = _lt(s1);
+	int lts2 = _lt(s2);
 	unsigned int a, b;
 
 	if (lts1 == 0)
@@ -53,10 +53,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	for (a = 0; s1[a] != '\0'; a++)
 		s1s2[a] = s1[a];
-	for (j = 0; j < n ; j++)
+	for (b = 0; b < n ; b++)
 	{
-		s1s2[a + 1] = s2[j];
-		i++;
+		s1s2[a] = s2[b];
+		a++;
 	}
 	s1s2[a] = '\0';
 	return (s1s2);
