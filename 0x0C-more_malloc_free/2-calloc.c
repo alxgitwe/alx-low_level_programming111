@@ -36,7 +36,7 @@ char *mm(char *b, char e, unsigned int c)
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 
-	unsigned int c = nmemb * sizeof(int);
+	unsigned int k = nmemb * sizeof(int);
 
 	void *d;
 
@@ -45,6 +45,6 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	d = malloc(nmemb * sizeof(int));
 	if (d == 0)
 		return (NULL);
-	mm(d, 0, c);
+	mm(d, 0, k);
 	return (d);
 }
