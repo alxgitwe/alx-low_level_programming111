@@ -1,6 +1,28 @@
 #include "main.h"
 
 /**
+ * mm - function
+ *
+ * @b : char
+ *
+ * @e : char
+ *
+ * @c : int
+ *
+ * Return: return
+ *
+ */
+
+char *mm(char *b, char e, unsigned int c)
+{
+	char *q = b;
+
+	while (c--)
+		*b++ = e;
+	return (q);
+}
+
+/**
  * _calloc - function that allocates memory for an array
  *
  * @nmemb : int
@@ -13,8 +35,8 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	char b;
-	unsigned int c = nmeb * sizeof(int);
+
+	unsigned int c = nmemb * sizeof(int);
 
 	void *d;
 
@@ -23,8 +45,6 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	d = malloc(nmemb * sizeof(int));
 	if (d == 0)
 		return (NULL);
-	while (c--)
-		*d++ = 0;
+	mm(d, 0, c);
 	return (d);
-
 }
