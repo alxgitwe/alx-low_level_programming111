@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * mm - function to memory 
+ * mm - function
  *
  * @b : char
  *
