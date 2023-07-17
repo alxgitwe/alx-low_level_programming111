@@ -1,17 +1,17 @@
 #include "dog.h"
 
 /**
- * init_dog - initialize a variable of type struct dog
+ * init_dog - initialize a dog
  *
- * @d : struct dog
+ * @d: struct dog
  *
- * @name : char
+ * @name: char
  *
- * @age : float
+ * @age: float
  *
- * @owner : char
+ * @owner: char
  *
- * Return: return
+ * Return: return vod
  *
  */
 
