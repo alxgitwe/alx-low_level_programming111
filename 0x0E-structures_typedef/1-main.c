@@ -1,11 +1,8 @@
 #include <stdio.h>
-#include "main.h"
 #include "dog.h"
 
 /**
  * main - check the code
- *
- * init_dog: function init_dog
  *
  * Return: Always 0.
  */
