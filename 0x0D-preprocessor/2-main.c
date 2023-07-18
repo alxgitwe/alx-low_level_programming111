@@ -9,9 +9,7 @@
 
 int main(void)
 {
-	char q = __FILE__;
-
-	printf("%s\n", q);
+	printf("%s\n", __FILE__);
 	return (0);
 
 }
