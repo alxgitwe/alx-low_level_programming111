@@ -22,9 +22,9 @@ int main(int argc, char **argv)
 	op_func = get_op_func(argv[2]);
 	if (!op_func)
 		printf("Error\n"), exit(99);
-	if ((argv[2][0] == '/' || argv[2][0] == '%') && !b)
+	if ((argv[2][0] == '/' || argv[2][0] == '%') && !j)
 		printf("Error\n"), exit(100);
-	print("%d\n", op_func(i, j));
+	printf("%d\n", op_func(i, j));
 	return (0);
 
 }
