@@ -14,11 +14,11 @@ int sum_them_all(const unsigned int n, ...)
 {
 	int a, b;
 
+	va_list c;
+
 	a = 0;
 
 	b = n;
-
-	va_list c;
 
 	if (!n)
 		return (0);
