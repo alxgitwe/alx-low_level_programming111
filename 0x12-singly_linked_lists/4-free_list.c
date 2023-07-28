@@ -20,9 +20,7 @@ void free_list(list_t *head)
 		a = head->next;
 		free(head);
 		head = a;
-		}
-		else
-			free(head);
+		} free(head);
 
 
 	}
