@@ -13,6 +13,9 @@ void free_list(list_t *head)
 {
 	list_t *a;
 
+	if (!head)
+		return;
+
 	while (head)
 	{
 		if (head->next)
