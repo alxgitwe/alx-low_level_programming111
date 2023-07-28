@@ -15,9 +15,15 @@ void free_list(list_t *head)
 
 	while (head)
 	{
+		if (head->next)
+		{
 		a = head->next;
 		free(head);
 		head = a;
+		}
+		else
+			free(head);
+
 
 	}
 
