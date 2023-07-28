@@ -17,7 +17,7 @@ void free_list(list_t *head)
 		return;
 	a = head;
 
-	while (a)
+	while (head)
 	{
 		if (head->next)
 		{
