@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * print_listint - function that prints all the elements
+ * listint_len - function that returns the number of elements
  *
  * @h: pointer
  *
@@ -9,7 +9,7 @@
  *
  */
 
-size_t print_listint(const listint_t *h)
+size_t listint_len(const listint_t *h)
 {
 	int a = 0;
 
