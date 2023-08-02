@@ -13,7 +13,6 @@ listint_t *reverse_listint(listint_t **head)
 	listint_t *a = NULL;
 	listint_t *b = NULL;
 
-	
 	a = *head;
 
 	if (!head || !*head)
