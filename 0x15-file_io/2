@@ -1,0 +1,16 @@
+#include "main.h"
+/**
+ * create_file - function that creates a file
+ *
+ * @filename : pointer char
+ *
+ * @text_content : char
+ *
+ * Return: return the value "0"
+ */
+
+int create_file(const char *filename, char *text_content)
+{
+
+
+}
