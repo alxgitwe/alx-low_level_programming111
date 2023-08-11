@@ -68,7 +68,7 @@ void _data(Elf64_Ehdr hdr)
 
 void _version(Elf64_Ehdr hdr)
 {
-	printf("  Version:                           %d",hdr.e_ident[EI_VERSION]);
+	printf("  Version:                           %d", hdr.e_ident[EI_VERSION]);
 	switch (hdr.e_ident[EI_VERSION])
 	{
 		case EV_NONE:
@@ -81,14 +81,42 @@ void _version(Elf64_Ehdr hdr)
 	printf("\n");
 }
 
+/**
+ * os_abi - function
+ * @hdr : elf header
+ */
 void os_abi(hdr)
-{}
+{
+
+}
+
+/**
+ * abi_version - function
+ * @hdr : elf header
+ */
 void abi_version(hdr)
-{}
+{
+
+}
+
+/**
+ * _type - function
+ * @hdr : elf header
+ */
 void _type(hdr)
-{}
+{
+
+}
+
+/**
+ * _epaddress - function
+ * @hdr : elf header
+ */
 void _epaddress(hdr)
-{}
+{
+	printf("Entry point address:               0x");
+
+}
 
 /**
  * main - main
@@ -104,7 +132,7 @@ int main(int ac, char **av)
 	int b;
 
 	if (!(b != -1))
-                dprintf(STDERR_FILENO, "Can't open open the file : %s\n", av[1]), exit(98);
+		dprintf(STDERR_FILENO, "Can't open open the file : %s\n", av[1]), exit(98);
 	a = read(b, hdr, sizeof(hdr));
 	if (!(ac == 2))
 		dprintf(STDERR_FILENO, "Usage: elf_header elf_filename\n"), exit(98);
