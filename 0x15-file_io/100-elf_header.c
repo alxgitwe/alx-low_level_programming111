@@ -1,4 +1,4 @@
-#include <ELF.H>
+#include <elf.h>
 #include "main.h"
 
 /**
@@ -12,7 +12,7 @@ void _magic(Elf64_Ehdr hdr)
 
 	printf("  Magic:   ");
 	for (a = 0; a < EI_NIDENT; a++)
-		printf("%2.2X%S", hdr.e_ident[a], a == EI_NIDENT - 1 ? "\n" : " ");
+		printf("%2.2X%s", hdr.e_ident[a], a == EI_NIDENT - 1 ? "\n" : " ");
 }
 
 /**
@@ -85,17 +85,18 @@ void _version(Elf64_Ehdr hdr)
  * os_abi - function
  * @hdr : elf header
  */
-void os_abi(hdr)
+void os_abi(Elf64_Ehdr hdr)
 {
-
+	printf("  Version:                           %d", hdr.e_ident[EI_VERSION]);
 }
 
 /**
  * abi_version - function
  * @hdr : elf header
  */
-void abi_version(hdr)
+void abi_version(Elf64_Ehdr hdr)
 {
+	printf("  Version:                           %d", hdr.e_ident[EI_VERSION]);
 
 }
 
@@ -103,18 +104,18 @@ void abi_version(hdr)
  * _type - function
  * @hdr : elf header
  */
-void _type(hdr)
+void _type(Elf64_Ehdr hdr)
 {
-
+	printf("  Version:                           %d", hdr.e_ident[EI_VERSION]);
 }
 
 /**
  * _epaddress - function
  * @hdr : elf header
  */
-void _epaddress(hdr)
+void _epaddress(Elf64_Ehdr hdr)
 {
-	printf("Entry point address:               0x");
+	printf("  Version:                           %d", hdr.e_ident[EI_VERSION]);
 
 }
 
@@ -131,18 +132,19 @@ int main(int ac, char **av)
 	ssize_t a;
 	int b;
 
+	b =  open(av[1], O_RDONLY);
+
 	if (!(b != -1))
 		dprintf(STDERR_FILENO, "Can't open open the file : %s\n", av[1]), exit(98);
-	a = read(b, hdr, sizeof(hdr));
+	a = read(b, &hdr, sizeof(hdr));
 	if (!(ac == 2))
 		dprintf(STDERR_FILENO, "Usage: elf_header elf_filename\n"), exit(98);
-	b =  open(av[1], O_RDONLY);
 	if (a != sizeof(hdr) || a < 1)
 		dprintf(STDERR_FILENO, "Can't open open the file : %s\n", av[1]), exit(98);
 
 
 	else
-		dprintf(STDERR_FILENO, "Not An Elf File:", av[1]), exit(98);
+		dprintf(STDERR_FILENO, "Not An Elf File: %s\n", av[1]), exit(98);
 	_magic(hdr);
 	_class(hdr);
 	_data(hdr);
