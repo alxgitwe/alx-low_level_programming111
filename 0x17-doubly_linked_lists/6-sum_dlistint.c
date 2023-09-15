@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * head - function
+ * sum_dlistint - function
  * @head: adress
  * Return: return
  */
